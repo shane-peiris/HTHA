@@ -12,7 +12,7 @@ const storeName = 'properties'
 
 //Configure Store Path
 const store = new Store({
-    path: Path.join(process.cwd(), `../config/${storeName}.json`)
+    path: Path.join(process.cwd(), `/config/${storeName}.json`)
 });
 
 //Clear Storag at Initizilation

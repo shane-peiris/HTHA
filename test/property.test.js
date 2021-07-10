@@ -323,7 +323,7 @@ describe("GET /property", () => {
         })
 
         //Should get id 1 marketStats as 'Below suburb average'; id 2 marketStats as 'Equal to suburb average'; id 3 marketStats as 'Above suburb average'; 
-        test("Should get a list of all available properties for Werribee and must be equal to 3", async () => {
+        test("Should get id 1 marketStats as 'Below suburb average'; id 2 marketStats as 'Equal to suburb average'; id 3 marketStats as 'Above suburb average'; ", async () => {
             const response = await request(app).get("/property").send({
                 filter: '{"suburb":"Werribee"}'
             })
