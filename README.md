@@ -29,7 +29,7 @@ Tests:       32 passed, 32 total
 > /property
 ```
 Method: POST
-Description: 
+Description: Creat a new Property
 
 Property Payload
 {
@@ -84,9 +84,9 @@ Sample Fail Result
 ```
 ```
 Method: GET
-Description: 
+Description: Get all a list of all Properties or search properties using a filter
 
-Expected Successful Result
+Expected Successful Result without a filter
 {
     "status": "success",
     "message": "All Property Details",
