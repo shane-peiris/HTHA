@@ -3,7 +3,7 @@
 
 
 # HTHA
-HTHA Developer - Coding Exercise
+HTHA - Coding Exercise
 
 ## Getting Started
 
