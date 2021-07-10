@@ -1,29 +1,28 @@
 //Package Imports
 import express from "express"
-import cors from "cors";
-import dotenv from "dotenv";
-import bodyparser from "body-parser";;
-import methodOverride from "method-override";
+import cors from "cors"
+import dotenv from "dotenv"
+import bodyparser from "body-parser"
 
 //Module Imports
-import Property from "./api/property.js";
+import Property from "./api/property.js"
 
 //Config DotEnv File
-dotenv.config();
+dotenv.config()
 
 //Initialize express module to variable app
-const app = express();
+const app = express()
 
 //Initial app configs
-app.use(cors());
-app.use(bodyparser.json({ extended:true, limit: '100mb' }));
-app.use(bodyparser.urlencoded({extended:true, limit: '100mb'}));
+app.use(cors())
+app.use(bodyparser.json({ extended:true, limit: '100mb' }))
+app.use(bodyparser.urlencoded({extended:true, limit: '100mb'}))
 app.use(logErrors)
 app.use(clientErrorHandler)
 app.use(errorHandler)
 
 //Main route to Property sub route
-app.use("/property",Property);
+app.use("/property",Property)
 
 //Specified reques not found
 app.use((req,res,next)=> {

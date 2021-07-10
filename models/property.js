@@ -1,8 +1,7 @@
 //Package Import
 import Moment from 'moment';
-import MomentRange from 'moment-range';
+import { extendMoment } from 'moment-range';
 import Store from 'data-store';
-import Os from 'os';
 import Path from 'path';
 
 //Module Import
@@ -19,7 +18,6 @@ const store = new Store({
 //Clear Storag at Initizilation
 store.clear();
 
-const { extendMoment } = MomentRange;
 const moment = extendMoment(Moment);
 
 //Property Construct
@@ -77,6 +75,45 @@ Property.getAll = async () => {
     }
 
     return propertyList;
+
+}
+
+//Filter Properties based on Property Object Filter
+Property.searchByObjFilter = async (filter) => {
+    
+    //Get all properties from store
+    let propertyFromStore = store.get(storeName);
+    let propertyList = [];
+
+    if (!isEmpty(propertyFromStore)) {
+        if (!Array.isArray(propertyFromStore))
+            propertyList.push(propertyFromStore)
+        else
+            propertyList = propertyFromStore
+    }
+
+    //Filter Properties by looping through each property
+    let filteredResults = propertyList.filter(function (obj) {
+        
+        let addObjectToResult = false
+
+        //Iterate through each object keys to check for matches for the filter object keys
+        const keys = Object.keys(obj);
+        keys.forEach((key, index) => {
+            try {
+                //All key matches will be checked for matching content and if so the object will be added to the result list
+                if (!isEmpty(filter[key]) && obj[key].toUpperCase() === (filter[key].toUpperCase())) {
+                    addObjectToResult = true
+                }
+            } catch (err) {}
+        });
+    
+        if (addObjectToResult) {
+            return obj;
+        }
+    });
+
+    return filteredResults;
 
 }
 

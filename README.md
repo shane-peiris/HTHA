@@ -1,2 +1,5 @@
 # HTHA
- HTHA Developer - Coding Exercise
+HTHA Developer - Coding Exercise
+
+# Getting Started
+
