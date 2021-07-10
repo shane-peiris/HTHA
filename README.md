@@ -26,9 +26,8 @@ Tests:       32 passed, 32 total
 4. Run **_npm start_** to run the project
 
 ## Available Routes
-> /property
+> POST /property
 ```
-Method: POST
 Description: Creat a new Property
 
 Property Payload
@@ -82,6 +81,8 @@ Sample Fail Result
     }
 }
 ```
+
+> GET /property
 ```
 Method: GET
 Description: Get all a list of all Properties or search properties using a filter
