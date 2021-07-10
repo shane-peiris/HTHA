@@ -1,9 +1,14 @@
 # HTHA
 HTHA Developer - Coding Exercise
 
-# Getting Started
+## Getting Started
+
+### Project Prerequisites
 1. Run **_npm install_** to install project packages and depenencies
-2. Create a **_.env_** file in the root of the project with the following information
+  ```sh
+  npm install
+  ```
+3. Create a **_.env_** file in the root of the project with the following information
 ```
 #Define environment Option here from the following DEV, BETA, PROD
 ENV=DEV
@@ -15,15 +20,23 @@ SERVER_PORT=5000
 SSL_KEY=null
 SSL_CERT=null
 ```
+
+### Test Project
 3. Run **_npm test_** to run the test cases to see if project is set up all good
-```
-Expected Results
+  ```sh
+  npm test
+  ```
+  *Expected Results
+  ```
+  Test Suites: 1 passed, 1 total
+  Tests:       32 passed, 32 total
+  ```
 
-Test Suites: 1 passed, 1 total
-Tests:       32 passed, 32 total
-```
-
+### Run Project
 4. Run **_npm start_** to run the project
+  ```sh
+  npm start
+  ```
 
 ## Available Routes
 > POST /property
