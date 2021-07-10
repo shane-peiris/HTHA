@@ -75,3 +75,4 @@ typings/
 # FuseBox cache
 .fusebox/
 config/properties.json
+test-reports/htha-test

@@ -1,0 +1,16 @@
+version: 1.0
+
+phases:
+  pre_build:
+    commands:
+      - npm install
+  build:
+    commands:
+      - npm test
+
+reports:
+  jest_reports:
+    files:
+      - htha-test
+    file-format: JUNITXML
+    base-directory: ./test-reports
