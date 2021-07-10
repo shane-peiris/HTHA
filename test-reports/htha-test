@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="32" failures="0" errors="0" time="1.584">
+  <testsuite name="POST /property" errors="0" failures="0" skipped="0" timestamp="2021-07-10T17:24:41" time="1.5" tests="32">
+    <testcase classname="POST /property with all required fields for a property with correct data Should respond with a json object with status field `success`" name="POST /property with all required fields for a property with correct data Should respond with a json object with status field `success`" time="0.179">
+    </testcase>
+    <testcase classname="POST /property with all required fields for a property with correct data Should respond with a json object containing an id (Successfully saved to Data Store)" name="POST /property with all required fields for a property with correct data Should respond with a json object containing an id (Successfully saved to Data Store)" time="0.025">
+    </testcase>
+    <testcase classname="POST /property with all required fields for a property with correct data Should respond with a json object with the message field `Property Record Created Successfully`" name="POST /property with all required fields for a property with correct data Should respond with a json object with the message field `Property Record Created Successfully`" time="0.014">
+    </testcase>
+    <testcase classname="POST /property with all required fields for a property with correct data Should specify json in the content type" name="POST /property with all required fields for a property with correct data Should specify json in the content type" time="0.014">
+    </testcase>
+    <testcase classname="POST /property with all required fields for a property with correct data Should respond with a 200 status code" name="POST /property with all required fields for a property with correct data Should respond with a 200 status code" time="0.013">
+    </testcase>
+    <testcase classname="POST /property with all required fields for a property with incorrect data Should respond with a json object with status field `error`" name="POST /property with all required fields for a property with incorrect data Should respond with a json object with status field `error`" time="0.016">
+    </testcase>
+    <testcase classname="POST /property with all required fields for a property with incorrect data Should respond with a json object with the list of errors" name="POST /property with all required fields for a property with incorrect data Should respond with a json object with the list of errors" time="0.012">
+    </testcase>
+    <testcase classname="POST /property with all required fields for a property with incorrect data Should respond with a json object with the message field `Invalid submission`" name="POST /property with all required fields for a property with incorrect data Should respond with a json object with the message field `Invalid submission`" time="0.012">
+    </testcase>
+    <testcase classname="POST /property with all required fields for a property with incorrect data Should specify json in the content type" name="POST /property with all required fields for a property with incorrect data Should specify json in the content type" time="0.014">
+    </testcase>
+    <testcase classname="POST /property with all required fields for a property with incorrect data Should respond with a 400 status code" name="POST /property with all required fields for a property with incorrect data Should respond with a 400 status code" time="0.014">
+    </testcase>
+    <testcase classname="POST /property without required fields Should respond with a json object with status field `error`" name="POST /property without required fields Should respond with a json object with status field `error`" time="0.011">
+    </testcase>
+    <testcase classname="POST /property without required fields Should respond with a json object with the list of errors" name="POST /property without required fields Should respond with a json object with the list of errors" time="0.011">
+    </testcase>
+    <testcase classname="POST /property without required fields Should respond with a json object with the message field `Invalid submission`" name="POST /property without required fields Should respond with a json object with the message field `Invalid submission`" time="0.012">
+    </testcase>
+    <testcase classname="POST /property without required fields Should specify json in the content type" name="POST /property without required fields Should specify json in the content type" time="0.011">
+    </testcase>
+    <testcase classname="POST /property without required fields Should respond with a 400 status code" name="POST /property without required fields Should respond with a 400 status code" time="0.011">
+    </testcase>
+    <testcase classname="POST /property without any fields Should respond with a json object with status field `error`" name="POST /property without any fields Should respond with a json object with status field `error`" time="0.011">
+    </testcase>
+    <testcase classname="POST /property without any fields Should respond with a json object with the list of errors" name="POST /property without any fields Should respond with a json object with the list of errors" time="0.012">
+    </testcase>
+    <testcase classname="POST /property without any fields Should respond with a json object with the message field `Invalid submission`" name="POST /property without any fields Should respond with a json object with the message field `Invalid submission`" time="0.011">
+    </testcase>
+    <testcase classname="POST /property without any fields Should specify json in the content type" name="POST /property without any fields Should specify json in the content type" time="0.011">
+    </testcase>
+    <testcase classname="POST /property without any fields Should respond with a 400 status code" name="POST /property without any fields Should respond with a 400 status code" time="0.012">
+    </testcase>
+    <testcase classname="GET /property without filters passed Should get a list of all available properties" name="GET /property without filters passed Should get a list of all available properties" time="0.01">
+    </testcase>
+    <testcase classname="GET /property without filters passed Should specify json in the content type" name="GET /property without filters passed Should specify json in the content type" time="0.01">
+    </testcase>
+    <testcase classname="GET /property without filters passed Should respond with a 200 status code" name="GET /property without filters passed Should respond with a 200 status code" time="0.01">
+    </testcase>
+    <testcase classname="GET /property with filters passed Should get a list of all available properties for Werribee" name="GET /property with filters passed Should get a list of all available properties for Werribee" time="0.012">
+    </testcase>
+    <testcase classname="GET /property with filters passed Should get a list of all available properties for Werribee and must be equal to 3" name="GET /property with filters passed Should get a list of all available properties for Werribee and must be equal to 3" time="0.012">
+    </testcase>
+    <testcase classname="GET /property with filters passed Should get id 1 marketStats as &apos;Below suburb average&apos;; id 2 marketStats as &apos;Equal to suburb average&apos;; id 3 marketStats as &apos;Above suburb average&apos;; " name="GET /property with filters passed Should get id 1 marketStats as &apos;Below suburb average&apos;; id 2 marketStats as &apos;Equal to suburb average&apos;; id 3 marketStats as &apos;Above suburb average&apos;; " time="0.013">
+    </testcase>
+    <testcase classname="GET /property with filters passed Should specify json in the content type" name="GET /property with filters passed Should specify json in the content type" time="0.011">
+    </testcase>
+    <testcase classname="GET /property with filters passed Should respond with a 200 status code" name="GET /property with filters passed Should respond with a 200 status code" time="0.012">
+    </testcase>
+    <testcase classname="GET /property with bad filters passed Should respond with a json object with status field `error`" name="GET /property with bad filters passed Should respond with a json object with status field `error`" time="0.011">
+    </testcase>
+    <testcase classname="GET /property with bad filters passed Should respond with a json object with the list of errors" name="GET /property with bad filters passed Should respond with a json object with the list of errors" time="0.011">
+    </testcase>
+    <testcase classname="GET /property with bad filters passed Should specify json in the content type" name="GET /property with bad filters passed Should specify json in the content type" time="0.011">
+    </testcase>
+    <testcase classname="GET /property with bad filters passed Should respond with a 400 status code" name="GET /property with bad filters passed Should respond with a 400 status code" time="0.012">
+    </testcase>
+  </testsuite>
+</testsuites>
